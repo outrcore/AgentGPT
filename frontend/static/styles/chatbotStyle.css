@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+#chat-container {
+  flex-grow: 1;
+  /*background-color: #f0f0f0;*/
+  padding: 16px 0px;
+  position: relative;
+  overflow-y: auto;
+}
+
+#messages-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.message {
+  max-width: 60%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #0084ff;
+  color: white;
+}
+
+.ai-message {
+  background-color: #e5e5e5;
+}
+
+#show-more {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin: 5px 0px;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+#input-container {
+  display: flex;
+  padding: 16px 8px;
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 0px 8px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  margin-right: 8px;
+}
+
+#submit {
+  padding: 8px 16px;
+  background-color: #0084ff;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px){
+  .container {
+    width: 95% !important;
+  }
+}
+
+pre {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #ccc;
+  overflow: auto;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+.row {
+  margin-left: 10px !important;
+}
+
+.row .col.s12{
+  margin-right: 400px !important;
+}
+
+
+
+
+
+/* Style for the Betting Odds Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.section {
+  border-top: 5px solid slategray;
+}
+
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+.section::before {
+  height: 5px;
+  display: table-row;
+  content: '';
+}
+
+th, td {
+  padding: 5px 3px !important;
+  text-align: center !important;
+  border-bottom: 1px solid lightgray !important;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.home {
+  background-color: whitesmoke;;
+}
+
+.away {
+  background-color: ghostwhite;
+}
+
+.draw {
+  background-color: white;
+}
+
+.tbody {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: slategray 2px solid !important;
+}
+
+.thead {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: black 1px solid;
+}
+
+.bestOdds {
+  font-weight: bold;
+  /*background-color: lightgreen; */
+}
+
+.plusEV {
+  font-weight: bold;
+  background-color: lightgreen;
+}
+
+
+
+/* Style for the Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 12px 16px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}

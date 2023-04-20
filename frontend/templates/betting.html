@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Filter -->
+<div class="filter-container">
+  <label for="team-filter">Filter by Team:</label>
+  <input type="text" id="team-filter" onkeyup="filterTable()">
+
+  <label for="bookmaker-dropdown">Filter by Bookmaker:</label>
+  <div class="dropdown">
+    <button class="dropdown-button">Select Bookmaker</button>
+    <div class="dropdown-content" id="bookmaker-dropdown">
+      <!-- Bookmaker checkboxes will be added here -->
+    </div>
+  </div>
+
+  <input type="date" id="date-filter" />
+</div>
+
+<!-- Betting header and table -->
+<h4>Moneyline</h4>
+<div id="betting-container-moneyline" class="table-container"></div>
+
+<h4>Over/Under</h4>
+<div id="betting-container-totals" class="table-container"></div>
+
+<h4>Points</h4>
+<div id="betting-container-points" class="table-container"></div>
+
+<script src="{{ url_for('static', filename='js/betting.js') }}"></script>
+<script>
+  // Add the JavaScript code provided above here.
+</script>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- The rest of your chatbot interface code goes here -->
+  <div id="chat-container">
+    <div id="messages-container"></div>
+    <button id="show-more">Show more</button>
+  </div>
+
+
+<div id="input-container" class="row">
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="user-input" type="text" class="validate" name="user-input" required>
+            <label for="user-input">Ask the chatbot:</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <button id="submit">Submit</button>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/chatbotJS.js') }}"></script>
+
+{% endblock %}
+
+
